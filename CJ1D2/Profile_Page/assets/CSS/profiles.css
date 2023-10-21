@@ -1,0 +1,11 @@
+.profile-info{
+    display: flex;
+    flex-direction:row-reverse;
+    gap: 25px
+}
+.profile-info img{
+    width: 250px;
+}
+.profile-text{
+    margin-top: auto;
+}

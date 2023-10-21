@@ -1,0 +1,53 @@
+.nav-logo a img{
+width: 50px
+}
+.nav-bar a{
+    color: white;
+    text-decoration: none;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: darkgrey
+}
+body{
+    display: grid;
+    height: 100vh;
+    text-align: center;
+    grid-template-areas: 
+    "topbar topbar topbar"
+    "ads content nav"
+    "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows:60px auto 70px;
+}
+nav{
+    grid-area: topbar;
+}
+.ads{
+    display: flex;
+    grid-area: ads;
+    padding-top: 20 px;
+    image-orientation: left;
+    padding:0%;
+
+
+}
+footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+
+}
+.content{
+    grid-area: content;
+    justify-content: center;
+    text-align: left;
+
+}
